@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+			<link rel="stylesheet" type="text/css" href="css/easyui.css"/>
+			<link rel="stylesheet" type="text/css" href="css/icon.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reserve.css">
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<div id="tq_kefu_main" class="tq_div_main" style="border: 0px ridge rgb(234, 234, 234); visibility: visible; position: fixed; top: 177px; z-index: 9997; padding: 0px; background: transparent none repeat scroll 0% 0%; text-align: center; left: 1px;">
+			<div id="tq_kefu_normal_container">
+				<img border="0" onclick="TQKF.kefuimg.Distrabute()" style="BACKGROUND:transparent none repeat scroll 0% 0%;cursor:pointer" src="img/offline3.png">
+			</div>
+		</div>
+		<div class="head">
+			<div class="head_nav">
+				<div class="head_nav_l">
+					<a onclick="return add_favorite(this,'中成国际');" href="javascript:;" title="中成国际" rel="sidebar" class="head_icon_1"><b></b>收藏中成国际</a>
+					<a target="_blank" href="javascript:;" class="head_icon_2"><b></b>中成国际首页</a>
+					<a class="head_icon_4 show_tip">
+						<b></b>加微信好友
+					</a>
+					<div class="head_H_1 divTip displayNONE" style="display: none;">
+						<b></b>
+						<dl>
+							<dt></dt>
+							<dd class="dd_top"></dd>
+							<dd>中成国际</dd>
+							<dd>官方微信</dd>
+							<dd class="H_click"></dd>
+						</dl>
+					</div>
+				</div>
+				<div class="head_nav_r">
+					<div style="display:none" id="ylogin">
+						<a target="_blank" href="javascript:;" class="head_login" id="h_username"></a>
+						<span onclick="loginout()" style="cursor:pointer;color:#1BBC9B" class="head_regist">退出</span>
+					</div>
+					<div id="nlogin">
+						<a href="javascript:;" class="head_login">登录</a>
+						<a class="head_dr_line">|</a>
+						<a href="javascript:;" class="head_regist">注册</a>
+					</div>
+					<a class="img">
+					我的中成
+				</a>
+					<div class="head_H_2 displayNONE">
+						<b></b>
+						<ul>
+							<li><a href="javascript:;" target="_blank">度假订单</a></li>
+							<li><a href="javascript:;" target="_blank">活动订单</a></li>
+							<li><a href="javascript:;" target="_blank">租车订单</a></li>
+							<li><a href="javascript:;" target="_blank">门票订单</a></li>
+							<li><a href="javascript:;" target="_blank">机票订单</a></li>
+							<!--<li><a target="_blank"  href="javascript:;">酒店订单</a></li>-->
+							<li><a href="javascript:;" target="_blank">我的世嘉卡</a></li>
+							<li><a rel="nofollow" href="javascript:;" target="_blank">我的优惠劵</a></li>
+							<li><a rel="nofollow" href="javascript:;" target="_blank">个性定制</a></li>
+							<li><a rel="nofollow" target="_blank" id="myQuestion">我的提问</a></li>
+						</ul>
+					</div>
+					<a class="img">
+					帮助中心
+				</a>
+					<div class="head_H_3 displayNONE">
+						<b></b>
+						<ul>
+							<li><a href="javascript:;" target="_blank">关于中成</a></li>
+							<li><a rel="nofollow" href="javascript:;" target="_blank">订单查询</a></li>
+							<li><a href="javascript:;" target="_blank">问题答疑</a></li>
+							<li><a href="javascript:;" target="_blank">证照服务</a></li>
+							<li><a href="javascript:;" target="_blank">出游宝典</a></li>
+							<li><a href="javascript:;" target="_blank">礼品卡</a></li>
+							<li><a href="javascript:;" target="_blank">世嘉卡</a></li>
+							<li><a rel="nofollow" href="javascript:;" target="_blank">支付方式</a></li>
+							<li><a href="javascript:;" target="_blank">网站地图</a></li>
+							<li><a href="javascript:;" target="_blank">旅游论坛</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="head_logo">
+				<p class="head_logo_l"><a style="display:inline-block;width:180px;height:100%;filter:alpha(Opacity=0);-moz-opacity:0;opacity: 0;" title="中成国际" href="javascript:;">中成国际</a></p>
+				<div class="head_ss">
+					<div class="head_ss_top">
+						<a href="javascript:;">全部<i></i></a>
+						<input type="text" value="搜索目的地、主题或关键字">
+						<b>搜索</b>
+					</div>
+					<div style=" clear: both;"></div>
+					<div class="head_ss_remen">
+						<img src="img/srk.png" alt="" />
+						<a href="javascript:;">美国</a>
+						<a href="javascript:;">加拿大</a>
+						<a href="javascript:;">新西兰</a>
+						<a href="javascript:;">日本</a>
+					</div>
+				</div>
+				<div class="head_logo_r">
+					<p class="H_hot"><b></b>中成国际服务热线</p>
+					<p class="H_hot_p">400-625-9960</p>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="nav_con">
+				<div class="nav_hot">
+					<a class="img">热门度假地
+				<b></b>
+				</a>
+				</div>
+				<ul>
+					<a href="index.html">
+						<li class="nav_click">首页</li>
+					</a>
+					<a href="cjcty.html">
+						<li>出境参团游</li>
+					</a>
+					<a href="cjzyx.html">
+						<li>出境自由行</li>
+					</a>
+					<a href="zjy.html">
+						<li>自驾游</li>
+					</a>
+
+					<a href="gaoduanyou.html">
+						<li>高端旅行</li>
+					</a>
+					<a href="sirendingzhi.html">
+						<li>私人定制</li>
+					</a>
+					<a href="hyjly.html">
+						<li>会议奖励游</li>
+					</a>
+					<a href="qianzheng.html">
+						<li>签证</li>
+					</a>
+					<!--<a href="javascript:;"><li &lt;!&ndash; if($act == 'hotel') &ndash;&gt;class="nav_click"&lt;!&ndash; end &ndash;&gt;>酒店</li></a>-->
+				</ul>
+			</div>
+			<i></i>
+		</div>
+		<div class="sy_cktw displayNONE" id="questionDialog">
+			<h2>我的提问<a class="close"></a></h2>
+			<div class="tw_list_cont">
+				<p>我的提问状态：<span class="no_jd">待解答（<b id="no"></b>）</span><span class="yi_jd">已解答（<b id="yes"></b>）</span></p>
+				<div class="tw_list_row" id="tw_list_row">
+
+				</div>
+			</div>
+			<!--提问列表结束-->
+
+		</div>
+		<div class="sy_cktw displayNONE" id="quesDialog">
+			<h2>我的提问<a class="close"></a></h2>
+			<div class="tw_cont_center">
+			</div>
+			<p class="twck_btn"><a>返回</a></p>
+		</div>
+		<div class="bjzf_pic dialog" id="dialogDiv2">
+			<a target="_blabk" href="javascript:;"><img src="img/sse_bjzf.jpg"></a>
+			<a class="close"></a>
+		</div>
+		<div class="center clear" style="padding-top: 42px;">
+			<!--center-->
+			<div class="productInfoBox">
+				<i class="genty"></i>
+				<h2 id="mainTitle"></h2>
+				<p class="product_num">[编号BJS12345]<span><北京出发></span></p>
+				<i></i>
+				<div class="productInfoBox_left">
+					<!--图片轮播-->
+					<div class="swiper-container">
+						<div class="swiper-container gallery-top">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" style="background-image:url(canada/canada14/trip14_pic1.jpg)"></div>
+								<div class="swiper-slide" style="background-image:url(canada/canada14/trip14_pic2.jpg)"></div>
+								<div class="swiper-slide" style="background-image:url(canada/canada14/trip14_pic3.jpg)"></div>
+								<div class="swiper-slide" style="background-image:url(canada/canada14/trip14_pic4.jpg)"></div>
+							</div>
+							<!-- Add Arrows -->
+							<div class="swiper-button-next swiper-button-white"></div>
+							<div class="swiper-button-prev swiper-button-white"></div>
+						</div>
+						<div class="swiper-container gallery-thumbs">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" style="background-image:url(canada/canada14/trip14_pic1.jpg)"></div>
+								<div class="swiper-slide" style="background-image:url(canada/canada14/trip14_pic2.jpg)"></div>
+								<div class="swiper-slide" style="background-image:url(canada/canada14/trip14_pic3.jpg)"></div>
+								<div class="swiper-slide" style="background-image:url(canada/canada14/trip14_pic4.jpg)"></div>
+							</div>
+						</div>
+					</div>
+					<!--日历-->
+					<div class="hj_n_date_slide">
+						<div class="hj_n_top">
+							<ul>
+								<li></li>
+								<li>周一</li>
+								<li>周二</li>
+								<li>周三</li>
+								<li>周四</li>
+								<li>周五</li>
+								<li>周六</li>
+								<li>周日</li>
+							</ul>
+						</div>
+						<div class="hj_n_bot clearfix">
+							<div class="hj_n_hj_left">
+								<div class="hj_nt">上月</div>
+								<div class="hj_nc">
+									<div class="hj_nyear">2017年</div>
+									<div class="hj_nmonth">7月</div>
+								</div>
+								<div class="hj_nb">下月</div>
+							</div>
+							<div class="hj_n_listmonth">
+								<ul>
+									<li class="hj_n_gray">26</li>
+									<li class="hj_n_gray">27</li>
+									<li class="hj_n_gray">28</li>
+									<li class="hj_n_gray">29</li>
+									<li class="hj_n_gray">30</li>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+									<li>6</li>
+									<li>7</li>
+									<li>8</li>
+									<li>9</li>
+									<li>10</li>
+									<li>11</li>
+									<li>12</li>
+									<li>13</li>
+									<li>14
+										<span class="hj_n_price">¥125000</span>
+										<span class="hj_n_full">充足</span>
+									</li>
+									<li>15</li>
+									<li>16</li>
+									<li>17</li>
+									<li>18</li>
+									<li>19</li>
+									<li>20</li>
+									<li>21</li>
+									<li>22</li>
+									<li>23</li>
+									<li>24</li>
+									<li>25</li>
+									<li>26</li>
+									<li>27</li>
+									<li>28</li>
+									<li>29</li>
+									<li>30</li>
+									<li class="hj_n_gray">1</li>
+									<li class="hj_n_gray">2</li>
+									<li class="hj_n_gray">3</li>
+									<li class="hj_n_gray">4</li>
+									<li class="hj_n_gray">5</li>
+									<li class="hj_n_gray">6</li>
+									<li class="hj_n_gray">7</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="productInfoBox_right">
+					<div class="hj_t">
+						<div class="hj_z_top">
+							<div class="hj_rfix">
+								<div class="t">客户满意度</div>
+								<div class="persent"><b>100</b>%</div>
+								<div class="b">0人点评</div>
+								<div class="save"><span></span>收藏线路</div>
+							</div>
+							<ul class="hj_z_list">
+								<li>
+									<div class="lefttit">中 成 价 ：</div>
+									<div class="righttxt">
+										<span class="biggertxt">¥125000</span>
+										<span class="normalred">起  起价说明</span>
+									</div>
+								</li>
+								<li>
+									<div class="lefttit">促销优惠：</div>
+									<div class="righttxt">
+										<!--<p>2015年2月29日之前报名并支付订金<span class="normalred">优惠300元/人</span></p>
+										<p>2015年3月1日-3月20日之间报名并支付订金<span class="normalred">优惠500元/人</span></p>-->
+									</div>
+								</li>
+								<li>
+									<div class="lefttit">优 惠 价：</div>
+									<div class="righttxt">
+										<span class="bigesttxt">¥125000</span><span class="normalred">起</span>
+									</div>
+								</li>
+								<li>
+									<div class="lefttit">提前报名：</div>
+									<div class="righttxt">
+										不限日期
+									</div>
+								</li>
+								<li>
+									<div class="lefttit">付款方式：</div>
+									<div class="righttxt">
+										付款方式
+									</div>
+								</li>
+								<li>
+									<div class="lefttit">选择班期：</div>
+									<div class="righttxt">
+										<input type="text" class="easyui-datebox" />
+									</div>
+								</li>
+								<li>
+									<div class="lefttit" style="line-height: 30px;">选择人数：</div>
+									<div class="righttxt">
+										<div class="checknum">
+											<div class="t">成人</div>
+											<div class="updown">
+												<div class="ll">-</div>
+												<div class="in"><input type="text" value="0" /></div>
+												<div class="rr">+</div>
+											</div>
+										</div>
+										<div class="checknum">
+											<div class="t">儿童</div>
+											<div class="updown">
+												<div class="ll">-</div>
+												<div class="in"><input type="text" value="0" /></div>
+												<div class="rr">+</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="product_title1" style=" width: 564px;">
+						<div class="list1">
+							<h3 id="proTeSe"></h3>
+						</div>
+						<div class="list1_con" id="proTeSeList" style=" margin-top: 10px;">
+
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="product_con">
+				<div class="product_title">
+					<ul>
+						<li class="now">
+							<a href="javascript:;" title="1">行程详情</a>
+						</li>
+						<li>
+							<a href="javascript:;" title="2">费用说明</a>
+						</li>
+						<li>
+							<a href="javascript:;" title="3">重要提示</a>
+						</li>
+					</ul>
+					<div class="tel">
+						<img src="img/tel.png" />
+						<a href="javascript:;">立即预定</a>
+					</div>
+				</div>
+				<div class="product_title1" id="index_1">
+					<div class="list1">
+						<h3>行程简要</h3>
+					</div>
+					<div class="list1_con">
+						<b><span>行程名称：</span>加拿大大西洋四省+丘吉尔观白鲸23日深度探索之旅</b>
+						<b><span>行程天数：</span>23天 125000元</b>
+						<b><span>适用团期：</span>2017-7-14</b>
+						<b><span>推荐理由：</span>到访加拿大大西洋沿岸第一个国家公园——布雷顿角高地国家公园的天际线步行小径徒步，沿路映入眼帘的是群山融入大海，阳光洒满海面的画面，尽情享受此地的美景和清新的空气。游览北美最东端的史比尔角国家历史遗迹，悬崖上矗立北美现存最古老的灯塔，独特的位置定会让您拍下精彩的照片。</b>
+					</div>
+				</div>
+				<div class="trip_time">
+					<div class="leftnav">
+						<ul id="leftnav"></ul>
+					</div>
+					<div class="conbox" id="proDayList"></div>
+				</div>
+				<div class="product_title1" id="index_2">
+					<div class="list1">
+						<h3>费用说明</h3>
+					</div>
+					<div class="list1_con">
+						<div id="bigPriceShow"></div>
+						<h3>旅游费用包含：</h3>
+						<div id="priceCloud"></div>
+						<h3>旅游费用不包含：</h3>
+						<div id="priceUnCloud"></div>
+						<div style=" margin-top: 25px;"></div>
+					</div>
+				</div>
+				<div class="product_title1" id="index_3">
+					<div class="list1">
+						<h3>重要提示</h3>
+					</div>
+					<div class="list1_con" id="noticeShow">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="foot_t_border">
+			<div class="dibu">
+				<a target="_blank" href="javascript:;">关于中成</a>|
+				<a target="_blank" href="javascript:;">合作品牌</a>|
+				<a target="_blank" href="javascript:;">加入中成</a>|
+				<a target="_blank" href="javascript:;">友情链接</a>|
+				<a rel="nofollow" target="_blank" href="javascript:;">法律声明</a>|
+				<a target="_blank" href="javascript:;">网站地图</a>|
+				<a target="_blank" href="javascript:;">证照服务</a>|
+				<a target="_blank" href="javascript:;">联系我们</a>|
+				<a target="_blank" href="javascript:;">热点问题</a>
+				<br>
+				<p>建议与投诉邮箱:support@caissa.com.cn Copyright&copy;2005-2013 caissa.com.cn</p>
+				<p>Copyright&copy;2005-2013 caissa.com.cn. AllRights Reserved.旅行社业务经营许可证编号：L-BJ-CJ00051 国家旅游局投诉电话：010-65275315</p>
+				<p>京ICP证031062号 北京中成国际旅行社有限公司版权所有 北京市公安局网络备案编号：京公网安备110105011423号</p>
+			</div>
+		</div>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.lazyload.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/util.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.easyui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var mainJsonUrl = "json/canada_14.json"
+		</script>
+		<script src="js/jsonget.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(".nav_con div.nav_hot_hide ol li").last().css({
+				border: "none"
+			});
+			$(".nav_con div.nav_hot_hide ol li").mouseover(function() {
+				$(this).children(".rm_hover_bg").show();
+			}).mouseout(function() {
+				$(this).children(".rm_hover_bg").hide();
+			})
+			$(".nav_con div.nav_hot_hide ol li").first().children(".rm_hover_bg").css({
+				borderTop: "none",
+				top: "0"
+			});
+			$(".nav_con div.nav_hot_hide ol li").last().children(".rm_hover_bg").css({
+				borderBottom: "none",
+				top: "-2px"
+			});
+			$(".product_con .product_title ul li").click(function() {
+				$(this).addClass('now').siblings().removeClass("now");
+			})
+		</script>
+		<script type="text/javascript" charset="utf-8">
+			$(function() {
+				$("img.lazy").lazyload({
+					placeholder: "/img/loading_tu.jpg",
+					effect: "fadeIn"
+				});
+			});
+		</script>
+		<script>
+			var galleryTop = new Swiper('.gallery-top', {
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				spaceBetween: 10,
+			});
+			var galleryThumbs = new Swiper('.gallery-thumbs', {
+				spaceBetween: 10,
+				centeredSlides: true,
+				slidesPerView: 'auto',
+				touchRatio: 0.2,
+				direction: 'vertical',
+				slideToClickedSlide: true
+			});
+			galleryTop.params.control = galleryThumbs;
+			galleryThumbs.params.control = galleryTop;
+		</script>
+		<script type="text/javascript">
+			$(".product_con .product_title ul li a").click(function() {
+				var index = this.title
+				var id = '#' + 'index_' + index
+				$("html,body").animate({
+					scrollTop: $(id).offset().top
+				}, 1000);
+			});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$(".dayitem_right").each(function() {
+					$(this).find("p").first().css("margin-top", 20)
+				})
+
+				function navFixed() {
+					var scrollTopHeight = $(window).scrollTop();
+					var topHeight = $(".head").height() + $(".nav").height() + $(".product_title").height() + $(".productInfoBox").height() + $(".product_title1").height() + 100;
+					var topHeight2 = $("#index_2").offset().top - 330;
+					var topH = $(".leftnav").offset().top
+					var fixedDom = $("#leftnav");
+					var fixedClass = "leftnavfixed";
+					if (scrollTopHeight > topHeight && scrollTopHeight < topHeight2) {
+						fixedDom.addClass(fixedClass).css("top", scrollTopHeight - topH);
+					} else {
+						fixedDom.removeClass(fixedClass).css("top", 0);
+					}
+				}
+
+				function scrollNav() {
+					var arr = [];
+					var scrollDom = $(".conbox .dayitem");
+					var navDom = $("#leftnav li");
+					var newClass = "on";
+					scrollDom.each(function() {
+						arr.push([$(this).offset().top, $(window).scrollTop() + 10]);
+					})
+					for (i = arr.length; i >= 1; i--) {
+						if (arr[i - 1][0] < arr[i - 1][1]) {
+							navDom.eq(i - 1).addClass(newClass).siblings().removeClass(newClass);
+							break;
+						}
+					}
+				}
+				navFixed();
+				scrollNav();
+				$(window).scroll(function() {
+					navFixed();
+					scrollNav();
+				})
+			})
+		</script>
+	</body>
+
+</html>

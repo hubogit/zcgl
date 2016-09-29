@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>签证</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/reserve.css">
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				width: 100%;
+				overflow-x: hidden;
+			}
+			
+			.bjzf_pic {
+				width: 600px;
+				height: 370px;
+				position: relative;
+				display: none;
+			}
+			
+			.bjzf_pic a.close {
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				background: #fff;
+				-moz-opacity: 0;
+				opacity: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+				cursor: pointer;
+			}
+			
+			#focusImgBox ul li {
+				position: absolute;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="tq_kefu_main" class="tq_div_main" style="border: 0px ridge rgb(234, 234, 234); visibility: visible; position: fixed; top: 177px; z-index: 9997; padding: 0px; background: transparent none repeat scroll 0% 0%; text-align: center; left: 1px;">
+			<div id="tq_kefu_normal_container">
+				<img border="0" onclick="TQKF.kefuimg.Distrabute()" style="BACKGROUND:transparent none repeat scroll 0% 0%;cursor:pointer" src="img/offline3.png">
+			</div>
+		</div>
+		<div class="head">
+			<div class="head_nav">
+				<div class="head_nav_l">
+					<a onclick="return add_favorite(this,'中成国际');" href="javascript:;" title="中成国际" rel="sidebar" class="head_icon_1"><b></b>收藏中成国际</a>
+					<a target="_blank" href="javascript:;" class="head_icon_2"><b></b>中成国际首页</a>
+					<a class="head_icon_4 show_tip">
+						<b></b>加微信好友
+					</a>
+					<div class="head_H_1 divTip displayNONE" style="display: none;">
+						<b></b>
+						<dl>
+							<dt></dt>
+							<dd class="dd_top"></dd>
+							<dd>中成国际</dd>
+							<dd>官方微信</dd>
+							<dd class="H_click"></dd>
+						</dl>
+					</div>
+				</div>
+				<div class="head_nav_r">
+					<div style="display:none" id="ylogin">
+						<a target="_blank" href="javascript:;" class="head_login" id="h_username"></a>
+						<span onclick="loginout()" style="cursor:pointer;color:#1BBC9B" class="head_regist">退出</span>
+					</div>
+					<div id="nlogin">
+						<a href="javascript:;" class="head_login">登录</a>
+						<a class="head_dr_line">|</a>
+						<a href="javascript:;" class="head_regist">注册</a>
+					</div>
+					<a class="img">
+					我的中成
+				</a>
+					<div class="head_H_2 displayNONE">
+						<b></b>
+						<ul>
+							<li><a href="javascript:;" target="_blank">度假订单</a></li>
+							<li><a href="javascript:;" target="_blank">活动订单</a></li>
+							<li><a href="javascript:;" target="_blank">租车订单</a></li>
+							<li><a href="javascript:;" target="_blank">门票订单</a></li>
+							<li><a href="javascript:;" target="_blank">机票订单</a></li>
+							<!--<li><a target="_blank"  href="javascript:;">酒店订单</a></li>-->
+							<li><a href="javascript:;" target="_blank">我的世嘉卡</a></li>
+							<li><a rel="nofollow" href="javascript:;" target="_blank">我的优惠劵</a></li>
+							<li><a rel="nofollow" href="javascript:;" target="_blank">个性定制</a></li>
+							<li><a rel="nofollow" target="_blank" id="myQuestion">我的提问</a></li>
+						</ul>
+					</div>
+					<a class="img">
+					帮助中心
+				</a>
+					<div class="head_H_3 displayNONE">
+						<b></b>
+						<ul>
+							<li><a href="javascript:;" target="_blank">关于中成</a></li>
+							<li><a rel="nofollow" href="javascript:;" target="_blank">订单查询</a></li>
+							<li><a href="javascript:;" target="_blank">问题答疑</a></li>
+							<li><a href="javascript:;" target="_blank">证照服务</a></li>
+							<li><a href="javascript:;" target="_blank">出游宝典</a></li>
+							<li><a href="javascript:;" target="_blank">礼品卡</a></li>
+							<li><a href="javascript:;" target="_blank">世嘉卡</a></li>
+							<li><a rel="nofollow" href="javascript:;" target="_blank">支付方式</a></li>
+							<li><a href="javascript:;" target="_blank">网站地图</a></li>
+							<li><a href="javascript:;" target="_blank">旅游论坛</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="head_logo">
+				<p class="head_logo_l"><a style="display:inline-block;width:180px;height:100%;filter:alpha(Opacity=0);-moz-opacity:0;opacity: 0;" title="中成国际" href="javascript:;">中成国际</a></p>
+				<div class="head_ss">
+					<div class="head_ss_top">
+						<a href="javascript:;">全部<i></i></a>
+						<input type="text" value="搜索目的地、主题或关键字">
+						<b>搜索</b>
+					</div>
+					<div style=" clear: both;"></div>
+					<div class="head_ss_remen">
+						<img src="img/srk.png" alt="" />
+						<a href="javascript:;">美国</a>
+						<a href="javascript:;">加拿大</a>
+						<a href="javascript:;">新西兰</a>
+						<a href="javascript:;">日本</a>
+					</div>
+				</div>
+				<div class="head_logo_r">
+					<p class="H_hot"><b></b>中成国际服务热线</p>
+					<p class="H_hot_p">400-625-9960</p>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="nav_con">
+				<div class="nav_hot">
+					<a class="img">热门度假地
+				<b></b>
+				</a>
+				</div>
+				<ul>
+					<a href="index.html">
+						<li>首页</li>
+					</a>
+					<a href="cjcty.html">
+						<li>出境参团游</li>
+					</a>
+					<a href="cjzyx.html">
+						<li>出境自由行</li>
+					</a>
+					<a href="zjy.html">
+						<li>自驾游</li>
+					</a>
+
+					<a href="gaoduanyou.html">
+						<li>高端旅行</li>
+					</a>
+					<a href="sirendingzhi.html">
+						<li>私人定制</li>
+					</a>
+					<a href="hyjly.html">
+						<li>会议奖励游</li>
+					</a>
+					<a href="qianzheng.html">
+						<li class="nav_click">签证</li>
+					</a>
+					<!--<a href="javascript:;"><li &lt;!&ndash; if($act == 'hotel') &ndash;&gt;class="nav_click"&lt;!&ndash; end &ndash;&gt;>酒店</li></a>-->
+				</ul>
+			</div>
+			<i></i>
+		</div>
+		<div class="sy_cktw displayNONE" id="questionDialog">
+			<h2>我的提问<a class="close"></a></h2>
+			<div class="tw_list_cont">
+				<p>我的提问状态：<span class="no_jd">待解答（<b id="no"></b>）</span><span class="yi_jd">已解答（<b id="yes"></b>）</span></p>
+				<div class="tw_list_row" id="tw_list_row">
+
+				</div>
+			</div>
+			<!--提问列表结束-->
+
+		</div>
+		<div class="sy_cktw displayNONE" id="quesDialog">
+			<h2>我的提问<a class="close"></a></h2>
+			<div class="tw_cont_center">
+			</div>
+			<p class="twck_btn"><a>返回</a></p>
+		</div>
+		<div class="bjzf_pic dialog" id="dialogDiv2">
+			<a target="_blabk" href="javascript:;"><img src="img/sse_bjzf.jpg"></a>
+			<a class="close"></a>
+		</div>
+		<div class="center clear">
+			<img src="img/qianzheng.jpg" style=" display: block; margin: 0 auto;"/>
+				<!--回到顶部-->
+				<div class="back backM" id="goTop">
+					<a>
+						<span></span>
+						<p>回到顶部</p>
+					</a>
+				</div>
+				<!--回到顶部 end-->
+			</div>
+		</div>
+		<div class="foot_t_border">
+			<div class="dibu">
+				<a target="_blank" href="javascript:;">关于中成</a>|
+				<a target="_blank" href="javascript:;">合作品牌</a>|
+				<a target="_blank" href="javascript:;">加入中成</a>|
+				<a target="_blank" href="javascript:;">友情链接</a>|
+				<a rel="nofollow" target="_blank" href="javascript:;">法律声明</a>|
+				<a target="_blank" href="javascript:;">网站地图</a>|
+				<a target="_blank" href="javascript:;">证照服务</a>|
+				<a target="_blank" href="javascript:;">联系我们</a>|
+				<a target="_blank" href="javascript:;">热点问题</a>
+				<br>
+				<p>建议与投诉邮箱:support@caissa.com.cn Copyright&copy;2005-2013 caissa.com.cn</p>
+				<p>Copyright&copy;2005-2013 caissa.com.cn. AllRights Reserved.旅行社业务经营许可证编号：L-BJ-CJ00051 国家旅游局投诉电话：010-65275315</p>
+				<p>京ICP证031062号 北京中成国际旅行社有限责任公司版权所有 北京市公安局网络备案编号：京公网安备110105011423号</p>
+			</div>
+		</div>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.lazyload.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/util.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(".nav_con div.nav_hot_hide ol li").last().css({
+				border: "none"
+			});
+			$(".nav_con div.nav_hot_hide ol li").mouseover(function() {
+				$(this).children(".rm_hover_bg").show();
+			}).mouseout(function() {
+				$(this).children(".rm_hover_bg").hide();
+			})
+			$(".nav_con div.nav_hot_hide ol li").first().children(".rm_hover_bg").css({
+				borderTop: "none",
+				top: "0"
+			});
+			$(".nav_con div.nav_hot_hide ol li").last().children(".rm_hover_bg").css({
+				borderBottom: "none",
+				top: "-2px"
+			});
+		</script>
+		<script type="text/javascript" charset="utf-8">
+			$(function() {
+				$("img.lazy").lazyload({
+					placeholder: "/img/loading_tu.jpg",
+					effect: "fadeIn"
+				});
+			});
+		</script>
+	</body>
+
+</html>

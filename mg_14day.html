@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+			<link rel="stylesheet" type="text/css" href="css/easyui.css"/>
+			<link rel="stylesheet" type="text/css" href="css/icon.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reserve.css">
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/icon.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<div id="tq_kefu_main" class="tq_div_main" style="border: 0px ridge rgb(234, 234, 234); visibility: visible; position: fixed; top: 177px; z-index: 9997; padding: 0px; background: transparent none repeat scroll 0% 0%; text-align: center; left: 1px;">
+			<div id="tq_kefu_normal_container">
+				<img border="0" onclick="TQKF.kefuimg.Distrabute()" style="BACKGROUND:transparent none repeat scroll 0% 0%;cursor:pointer" src="img/offline3.png">
+			</div>
+		</div>
+		<div class="head">
+			<div class="head_nav">
+				<div class="head_nav_l">
+					<a onclick="return add_favorite(this,'中成国际');" href="javascript:;" title="中成国际" rel="sidebar" class="head_icon_1"><b></b>收藏中成国际</a>
+					<a target="_blank" href="javascript:;" class="head_icon_2"><b></b>中成国际首页</a>
+					<a class="head_icon_4 show_tip">
+						<b></b>加微信好友
+					</a>
+					<div class="head_H_1 divTip displayNONE" style="display: none;">
+						<b></b>
+						<dl>
+							<dt></dt>
+							<dd class="dd_top"></dd>
+							<dd>中成国际</dd>
+							<dd>官方微信</dd>
+							<dd class="H_click"></dd>
+						</dl>
+					</div>
+				</div>
+				<div class="head_nav_r">
+					<div style="display:none" id="ylogin">
+						<a target="_blank" href="javascript:;" class="head_login" id="h_username"></a>
+						<span onclick="loginout()" style="cursor:pointer;color:#1BBC9B" class="head_regist">退出</span>
+					</div>
+					<div id="nlogin">
+						<a href="javascript:;" class="head_login">登录</a>
+						<a class="head_dr_line">|</a>
+						<a href="javascript:;" class="head_regist">注册</a>
+					</div>
+					<a class="img">
+					我的中成
+				</a>
+					<div class="head_H_2 displayNONE">
+						<b></b>
+						<ul>
+							<li><a href="javascript:;" target="_blank">度假订单</a></li>
+							<li><a href="javascript:;" target="_blank">活动订单</a></li>
+							<li><a href="javascript:;" target="_blank">租车订单</a></li>
+							<li><a href="javascript:;" target="_blank">门票订单</a></li>
+							<li><a href="javascript:;" target="_blank">机票订单</a></li>
+							<!--<li><a target="_blank"  href="javascript:;">酒店订单</a></li>-->
+							<li><a href="javascript:;" target="_blank">我的世嘉卡</a></li>
+							<li><a rel="nofollow" href="javascript:;" target="_blank">我的优惠劵</a></li>
+							<li><a rel="nofollow" href="javascript:;" target="_blank">个性定制</a></li>
+							<li><a rel="nofollow" target="_blank" id="myQuestion">我的提问</a></li>
+						</ul>
+					</div>
+					<a class="img">
+					帮助中心
+				</a>
+					<div class="head_H_3 displayNONE">
+						<b></b>
+						<ul>
+							<li><a href="javascript:;" target="_blank">关于中成</a></li>
+							<li><a rel="nofollow" href="javascript:;" target="_blank">订单查询</a></li>
+							<li><a href="javascript:;" target="_blank">问题答疑</a></li>
+							<li><a href="javascript:;" target="_blank">证照服务</a></li>
+							<li><a href="javascript:;" target="_blank">出游宝典</a></li>
+							<li><a href="javascript:;" target="_blank">礼品卡</a></li>
+							<li><a href="javascript:;" target="_blank">世嘉卡</a></li>
+							<li><a rel="nofollow" href="javascript:;" target="_blank">支付方式</a></li>
+							<li><a href="javascript:;" target="_blank">网站地图</a></li>
+							<li><a href="javascript:;" target="_blank">旅游论坛</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="head_logo">
+				<p class="head_logo_l"><a style="display:inline-block;width:180px;height:100%;filter:alpha(Opacity=0);-moz-opacity:0;opacity: 0;" title="中成国际" href="javascript:;">中成国际</a></p>
+				<div class="head_ss">
+					<div class="head_ss_top">
+						<a href="javascript:;">全部<i></i></a>
+						<input type="text" value="搜索目的地、主题或关键字">
+						<b>搜索</b>
+					</div>
+					<div style=" clear: both;"></div>
+					<div class="head_ss_remen">
+						<img src="img/srk.png" alt="" />
+						<a href="javascript:;">美国</a>
+						<a href="javascript:;">加拿大</a>
+						<a href="javascript:;">新西兰</a>
+						<a href="javascript:;">日本</a>
+					</div>
+				</div>
+				<div class="head_logo_r">
+					<p class="H_hot"><b></b>中成国际服务热线</p>
+					<p class="H_hot_p">400-625-9960</p>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="nav_con">
+				<div class="nav_hot">
+					<a class="img">热门度假地
+				<b></b>
+				</a>
+				</div>
+				<ul>
+					<a href="index.html">
+						<li class="nav_click">首页</li>
+					</a>
+					<a href="cjcty.html">
+						<li>出境参团游</li>
+					</a>
+					<a href="cjzyx.html">
+						<li>出境自由行</li>
+					</a>
+					<a href="zjy.html">
+						<li>自驾游</li>
+					</a>
+
+					<a href="gaoduanyou.html">
+						<li>高端旅行</li>
+					</a>
+					<a href="sirendingzhi.html">
+						<li>私人定制</li>
+					</a>
+					<a href="hyjly.html">
+						<li>会议奖励游</li>
+					</a>
+					<a href="qianzheng.html">
+						<li>签证</li>
+					</a>
+					<!--<a href="javascript:;"><li &lt;!&ndash; if($act == 'hotel') &ndash;&gt;class="nav_click"&lt;!&ndash; end &ndash;&gt;>酒店</li></a>-->
+				</ul>
+			</div>
+			<i></i>
+		</div>
+		<div class="sy_cktw displayNONE" id="questionDialog">
+			<h2>我的提问<a class="close"></a></h2>
+			<div class="tw_list_cont">
+				<p>我的提问状态：<span class="no_jd">待解答（<b id="no"></b>）</span><span class="yi_jd">已解答（<b id="yes"></b>）</span></p>
+				<div class="tw_list_row" id="tw_list_row">
+
+				</div>
+			</div>
+			<!--提问列表结束-->
+
+		</div>
+		<div class="sy_cktw displayNONE" id="quesDialog">
+			<h2>我的提问<a class="close"></a></h2>
+			<div class="tw_cont_center">
+			</div>
+			<p class="twck_btn"><a>返回</a></p>
+		</div>
+		<div class="bjzf_pic dialog" id="dialogDiv2">
+			<a target="_blabk" href="javascript:;"><img src="img/sse_bjzf.jpg"></a>
+			<a class="close"></a>
+		</div>
+		<div class="center clear" style="padding-top: 42px;">
+			<!--center-->
+			<div class="productInfoBox">
+				<i class="genty"></i>
+				<h2 id="mainTitle"></h2>
+				<p class="product_num">[编号BJS12345]<span><北京出发></span></p>
+				<i></i>
+				<div class="productInfoBox_left">
+					<!--图片轮播-->
+					<div class="swiper-container">
+						<div class="swiper-container gallery-top">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" style="background-image:url(cjzyx_pic/cjcty4/trip1_pic1.jpg)"></div>
+								<div class="swiper-slide" style="background-image:url(cjzyx_pic/cjcty4/trip2_pic1.jpg)"></div>
+								<div class="swiper-slide" style="background-image:url(cjzyx_pic/cjcty4/trip3_pic1.jpg)"></div>
+								<div class="swiper-slide" style="background-image:url(cjzyx_pic/cjcty4/trip3_pic2.jpg)"></div>
+								<div class="swiper-slide" style="background-image:url(cjzyx_pic/cjcty4/trip11_pic2.jpg)"></div>
+							</div>
+							<!-- Add Arrows -->
+							<div class="swiper-button-next swiper-button-white"></div>
+							<div class="swiper-button-prev swiper-button-white"></div>
+						</div>
+						<div class="swiper-container gallery-thumbs">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" style="background-image:url(cjzyx_pic/cjcty4/trip1_pic1.jpg)"></div>
+								<div class="swiper-slide" style="background-image:url(cjzyx_pic/cjcty4/trip2_pic1.jpg)"></div>
+								<div class="swiper-slide" style="background-image:url(cjzyx_pic/cjcty4/trip3_pic1.jpg)"></div>
+								<div class="swiper-slide" style="background-image:url(cjzyx_pic/cjcty4/trip3_pic2.jpg)"></div>
+								<div class="swiper-slide" style="background-image:url(cjzyx_pic/cjcty4/trip11_pic2.jpg)"></div>
+							</div>
+						</div>
+					</div>
+					<!--日历-->
+					<div class="hj_n_date_slide">
+						<div class="hj_n_top">
+							<ul>
+								<li></li>
+								<li>周一</li>
+								<li>周二</li>
+								<li>周三</li>
+								<li>周四</li>
+								<li>周五</li>
+								<li>周六</li>
+								<li>周日</li>
+							</ul>
+						</div>
+						<div class="hj_n_bot clearfix">
+							<div class="hj_n_hj_left">
+								<div class="hj_nt">上月</div>
+								<div class="hj_nc">
+									<div class="hj_nyear">2016年</div>
+									<div class="hj_nmonth">7月</div>
+								</div>
+								<div class="hj_nb">下月</div>
+							</div>
+							<div class="hj_n_listmonth">
+								<ul>
+									<li class="hj_n_gray">27</li>
+									<li class="hj_n_gray">28</li>
+									<li class="hj_n_gray">29</li>
+									<li class="hj_n_gray">30</li>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+									<li>6</li>
+									<li>7</li>
+									<li>8</li>
+									<li>9</li>
+									<li>10</li>
+									<li>11</li>
+									<li>12</li>
+									<li>13</li>
+									<li>14</li>
+									<li>15</li>
+									<li>16</li>
+									<li>17</li>
+									<li>18</li>
+									<li>19</li>
+									<li>20
+										<span class="hj_n_price">¥26999</span>
+										<span class="hj_n_full">充足</span>
+									</li>
+									<li>21</li>
+									<li>22</li>
+									<li>23</li>
+									<li>24</li>
+									<li>25</li>
+									<li>26</li>
+									<li>27</li>
+									<li>28</li>
+									<li>29</li>
+									<li>30</li>
+									<li>31</li>
+									<li class="hj_n_gray">1</li>
+									<li class="hj_n_gray">2</li>
+									<li class="hj_n_gray">3</li>
+									<li class="hj_n_gray">4</li>
+									<li class="hj_n_gray">5</li>
+									<li class="hj_n_gray">6</li>
+									<li class="hj_n_gray">7</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="productInfoBox_right">
+					<div class="hj_t">
+						<div class="hj_z_top">
+							<div class="hj_rfix">
+								<div class="t">客户满意度</div>
+								<div class="persent"><b>100</b>%</div>
+								<div class="b">0人点评</div>
+								<div class="save"><span></span>收藏线路</div>
+							</div>
+							<ul class="hj_z_list">
+								<li>
+									<div class="lefttit">中 成 价 ：</div>
+									<div class="righttxt">
+										<span class="biggertxt">¥26999</span>
+										<span class="normalred">起  起价说明</span>
+									</div>
+								</li>
+								<li>
+									<div class="lefttit">促销优惠：</div>
+									<div class="righttxt">
+										<!--<p>2015年2月29日之前报名并支付订金<span class="normalred">优惠300元/人</span></p>
+										<p>2015年3月1日-3月20日之间报名并支付订金<span class="normalred">优惠500元/人</span></p>-->
+									</div>
+								</li>
+								<li>
+									<div class="lefttit">优 惠 价：</div>
+									<div class="righttxt">
+										<span class="bigesttxt">¥26999</span><span class="normalred">起</span>
+									</div>
+								</li>
+								<li>
+									<div class="lefttit">提前报名：</div>
+									<div class="righttxt">
+										不限日期
+									</div>
+								</li>
+								<li>
+									<div class="lefttit">付款方式：</div>
+									<div class="righttxt">
+										付款方式
+									</div>
+								</li>
+								<li>
+									<div class="lefttit">选择班期：</div>
+									<div class="righttxt">
+										<input type="text" class="easyui-datebox" />
+									</div>
+								</li>
+								<li>
+									<div class="lefttit" style="line-height: 30px;">选择人数：</div>
+									<div class="righttxt">
+										<div class="checknum">
+											<div class="t">成人</div>
+											<div class="updown">
+												<div class="ll">-</div>
+												<div class="in"><input type="text" value="0" /></div>
+												<div class="rr">+</div>
+											</div>
+										</div>
+										<div class="checknum">
+											<div class="t">儿童</div>
+											<div class="updown">
+												<div class="ll">-</div>
+												<div class="in"><input type="text" value="0" /></div>
+												<div class="rr">+</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="product_title1" style=" width: 564px;">
+						<div class="list1">
+							<h3 id="proTeSe"></h3>
+						</div>
+						<div class="list1_con" id="proTeSeList" style=" margin-top: 10px;">
+
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="product_con">
+				<div class="product_title">
+					<ul>
+						<li class="now">
+							<a href="javascript:;" title="1">行程详情</a>
+						</li>
+						<li>
+							<a href="javascript:;" title="2">费用说明</a>
+						</li>
+						<li>
+							<a href="javascript:;" title="3">重要提示</a>
+						</li>
+					</ul>
+					<div class="tel">
+						<img src="img/tel.png" />
+						<a href="javascript:;">立即预定</a>
+					</div>
+				</div>
+				<div class="product_title1" id="index_1">
+					<div class="list1">
+						<h3>行程简要</h3>
+					</div>
+					<div class="list1_con">
+						<b><span>行程名称：</span>品味黄石——美国东西海岸黄石公园大瀑布14日游</b>
+						<b><span>行程天数：</span>14天 26999元</b>
+						<b><span>适用团期：</span>2016-07-06</b>
+						<b><span>推荐理由：</span>前往美国最大、最著名和建立最早的国家公园——黄石国家公园2晚住宿，让您在此充分游览黄石公园南北部，感受黄石公园的峡谷、瀑布、喷泉及间歇泉美景；包含尼亚加拉大瀑布游船，尽揽雄壮、澎湃的瀑布美景；畅游天使之城洛杉矶，探秘好莱坞环球影城，体验世界电影最新科技，亲睹畅销大片的拍摄奥秘；拥抱纽约，观“华尔街”金融牛熊无烟战场全貌，睹自由女神终极芳容，揽第五大道的奢华，望时代广场的人流；造访世界政治中心美国首都华盛顿特区，享受脚踏世界权力中心的快感；</b>
+					</div>
+				</div>
+				<div class="trip_time">
+					<div class="leftnav">
+						<ul id="leftnav"></ul>
+					</div>
+					<div class="conbox" id="proDayList"></div>
+				</div>
+				<div class="product_title1" id="index_2">
+					<div class="list1">
+						<h3>费用说明</h3>
+					</div>
+					<div class="list1_con">
+						<div id="bigPriceShow"></div>
+						<h3>旅游费用包含：</h3>
+						<div id="priceCloud"></div>
+						<h3>旅游费用不包含：</h3>
+						<div id="priceUnCloud"></div>
+						<div style=" margin-top: 25px;"></div>
+						<!--<table width="790" border="2" cellspacing="0" cellpadding="0">
+							<tr>
+								<th height="48" colspan="6" bgcolor="#bfbfbf" scope="col"><strong>另行付费旅游项目介绍（价格仅供参考，具体费用请以当地为准）</strong></th>
+							</tr>
+							<tr>
+								<td width="130" height="30">
+									<div align="center">地区</div>
+								</td>
+								<td width="130">
+									<div align="center">项目</div>
+								</td>
+								<td width="108">
+									<div align="center">价格（美元/人）</div>
+								</td>
+								<td width="195">
+									<div align="center">内容</div>
+								</td>
+								<td width="121">
+									<div align="center">费用包含</div>
+								</td>
+								<td width="90">
+									<div align="center">人数要求</div>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="3">
+									<div align="center">拉斯维加斯</div>
+								</td>
+								<td>
+									<div align="center">大峡谷（西峡）</div>
+								</td>
+								<td>
+									<div align="center">240</div>
+								</td>
+								<td>
+									<p align="center">从拉斯维加斯前往西峡，穿过西部山路，到达西峡。</p>
+									<p align="center">行程约8小时</p>
+								</td>
+								<td>
+									<div align="center">往返车费+午餐+导游服务费</div>
+								</td>
+								<td>
+									<div align="center">人数不限5人以上导游陪同</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div align="center">大峡谷直升机+游船</div>
+								</td>
+								<td>
+									<div align="center">240</div>
+								</td>
+								<td>
+									<p align="center">如您参加了240美元/人的大峡谷自费项目，抵达大峡谷后，也可参加此自费项目：乘直升飞机及游船游览峡谷风景，从不同角度观赏峡谷风景。</p>
+									<p align="center">约20分钟</p>
+								</td>
+								<td>
+									<div align="center">直升机机票费+船票+导游服务费</div>
+								</td>
+								<td>
+									<div align="center">人数不限</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div align="center">拉斯维加斯夜游</div>
+								</td>
+								<td>
+									<div align="center">60</div>
+								</td>
+								<td>
+									<p align="center">观赏威尼斯酒店，火山爆发，水舞灯光秀等著名的拉斯维加斯夜景。</p>
+									<p align="center">约3 小时</p>
+								</td>
+								<td>
+									<div align="center">接送车费、服务费</div>
+								</td>
+								<td>
+									<div align="center">全团安排</div>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="3">
+									<div align="center">洛杉矶</div>
+								</td>
+								<td>
+									<div align="center">圣地亚哥一日游</div>
+								</td>
+								<td>
+									<div align="center">120</div>
+								</td>
+								<td>
+									<p align="center">游览圣地亚哥老城，他是加州的诞生地，然后前往军港在岸边欣赏美丽的军港风情，之后前往圣地亚哥市民热爱的休闲娱乐地巴博亚公园。行程约7小时</p>
+								</td>
+								<td>
+									<p align="center">往返车费+导游服务费</p>
+								</td>
+								<td>
+									<p align="center">全团安排</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div align="center">圣地亚哥游船</div>
+								</td>
+								<td>
+									<div align="center">26</div>
+								</td>
+								<td>
+									<p align="center">如果您参加了圣地亚哥一日游自费项目也可以参加此项自费项目：乘游船近距离观光圣地亚哥军港及航空母舰。行程约1小时</p>
+								</td>
+								<td>
+									<p align="center">船票+导游服务费 </p>
+								</td>
+								<td>
+									<p align="center">全团安排</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div align="center">迪斯尼乐园</div>
+								</td>
+								<td>
+									<div align="center">160</div>
+								</td>
+								<td>
+									<p align="center">参观迪斯尼游乐园，它是一座主题游乐公园，在这里经常会碰到一些演员扮成的米老鼠、唐老鸭等动画人物，仿佛走进了童话世界。约5小时。入内参观，一票到底，行程长5小时</p>
+								</td>
+								<td>
+									<p align="center">往返车费+导游服务费+停车费 </p>
+								</td>
+								<td>
+									<p align="center">基于10人或以上参考价格；（10人以下价格将上调另议）</p>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="4">
+									<div align="center">纽约</div>
+								</td>
+								<td>
+									<div align="center">纽约夜游</div>
+								</td>
+								<td>
+									<div align="center">75</div>
+								</td>
+								<td>
+									<p align="center">体验最具现代的都市夜生活，观洛克菲勒大厦或帝国大厦月3小时</p>
+								</td>
+								<td>
+									<p align="center">门票+接送车费+服务费+导游陪同</p>
+								</td>
+								<td>
+									<p align="center">全团安排</p>
+								</td>
+							</tr>
+						</table>
+						<div style=" height: 25px;"></div>
+						<table width="790" border="2" cellspacing="0" cellpadding="0">
+							<tr>
+								<th height="48" colspan="4" bgcolor="#bfbfbf" scope="col">
+									<p><strong>&nbsp;购物场所介绍</strong></p>
+								</th>
+							</tr>
+							<tr>
+								<td width="160" height="34">
+									<p align="center"><strong>地区</strong></p>
+								</td>
+								<td width="170">
+									<p align="center"><strong>商品名称</strong></p>
+								</td>
+								<td width="210">
+									<p align="center">主要商品</p>
+								</td>
+								<td width="238">
+									<p align="center">时间</p>
+								</td>
+							</tr>
+							<tr>
+								<td height="34">
+									<p align="center">洛杉矶</p>
+								</td>
+								<td>
+									<p align="center">帝宝</p>
+								</td>
+								<td>
+									<p align="center">保健品,化妆品,小纪念品</p>
+								</td>
+								<td>
+									<p align="center">不超过1小时</p>
+								</td>
+							</tr>
+							<tr>
+								<td height="34">
+									<p align="center">纽约</p>
+								</td>
+								<td>
+									<p align="center">Cosmos</p>
+								</td>
+								<td>
+									<p align="center">钻石,化妝品,名牌手表,眼镜,SWAROVSKI,TUMI箱包</p>
+								</td>
+								<td>
+									<p align="center">不超过1小时</p>
+								</td>
+							</tr>
+						</table>-->
+					</div>
+				</div>
+				<div class="product_title1" id="index_3">
+					<div class="list1">
+						<h3>重要提示</h3>
+					</div>
+					<div class="list1_con" id="noticeShow">
+
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="foot_t_border">
+			<div class="dibu">
+				<a target="_blank" href="javascript:;">关于中成</a>|
+				<a target="_blank" href="javascript:;">合作品牌</a>|
+				<a target="_blank" href="javascript:;">加入中成</a>|
+				<a target="_blank" href="javascript:;">友情链接</a>|
+				<a rel="nofollow" target="_blank" href="javascript:;">法律声明</a>|
+				<a target="_blank" href="javascript:;">网站地图</a>|
+				<a target="_blank" href="javascript:;">证照服务</a>|
+				<a target="_blank" href="javascript:;">联系我们</a>|
+				<a target="_blank" href="javascript:;">热点问题</a>
+				<br>
+				<p>建议与投诉邮箱:support@caissa.com.cn Copyright&copy;2005-2013 caissa.com.cn</p>
+				<p>Copyright&copy;2005-2013 caissa.com.cn. AllRights Reserved.旅行社业务经营许可证编号：L-BJ-CJ00051 国家旅游局投诉电话：010-65275315</p>
+				<p>京ICP证031062号 北京中成国际旅行社有限公司版权所有 北京市公安局网络备案编号：京公网安备110105011423号</p>
+			</div>
+		</div>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.lazyload.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/util.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.easyui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.easyui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var mainJsonUrl = "json/cjcty4.json"
+		</script>
+		<script src="js/jsonget.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(".nav_con div.nav_hot_hide ol li").last().css({
+				border: "none"
+			});
+			$(".nav_con div.nav_hot_hide ol li").mouseover(function() {
+				$(this).children(".rm_hover_bg").show();
+			}).mouseout(function() {
+				$(this).children(".rm_hover_bg").hide();
+			})
+			$(".nav_con div.nav_hot_hide ol li").first().children(".rm_hover_bg").css({
+				borderTop: "none",
+				top: "0"
+			});
+			$(".nav_con div.nav_hot_hide ol li").last().children(".rm_hover_bg").css({
+				borderBottom: "none",
+				top: "-2px"
+			});
+			$(".product_con .product_title ul li").click(function() {
+				$(this).addClass('now').siblings().removeClass("now");
+			})
+		</script>
+		<script type="text/javascript" charset="utf-8">
+			$(function() {
+				$("img.lazy").lazyload({
+					placeholder: "/img/loading_tu.jpg",
+					effect: "fadeIn"
+				});
+			});
+		</script>
+		<script>
+			var galleryTop = new Swiper('.gallery-top', {
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				spaceBetween: 10,
+			});
+			var galleryThumbs = new Swiper('.gallery-thumbs', {
+				spaceBetween: 10,
+				centeredSlides: true,
+				slidesPerView: 'auto',
+				touchRatio: 0.2,
+				direction: 'vertical',
+				slideToClickedSlide: true
+			});
+			galleryTop.params.control = galleryThumbs;
+			galleryThumbs.params.control = galleryTop;
+		</script>
+		<script type="text/javascript">
+			$(".product_con .product_title ul li a").click(function() {
+				var index = this.title
+				var id = '#' + 'index_' + index
+				$("html,body").animate({
+					scrollTop: $(id).offset().top
+				}, 1000);
+			});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$(".dayitem_right").each(function() {
+					$(this).find("p").first().css("margin-top", 20)
+				})
+
+				function navFixed() {
+					var scrollTopHeight = $(window).scrollTop();
+					var topHeight = $(".head").height() + $(".nav").height() + $(".product_title").height() + $(".productInfoBox").height() + $(".product_title1").height() + 100;
+					var topHeight2 = $("#index_2").offset().top - 330;
+					var topH = $(".leftnav").offset().top
+					var fixedDom = $("#leftnav");
+					var fixedClass = "leftnavfixed";
+					if (scrollTopHeight > topHeight && scrollTopHeight < topHeight2) {
+						fixedDom.addClass(fixedClass).css("top", scrollTopHeight - topH);
+					} else {
+						fixedDom.removeClass(fixedClass).css("top", 0);
+					}
+				}
+
+				function scrollNav() {
+					var arr = [];
+					var scrollDom = $(".conbox .dayitem");
+					var navDom = $("#leftnav li");
+					var newClass = "on";
+					scrollDom.each(function() {
+						arr.push([$(this).offset().top, $(window).scrollTop() + 10]);
+					})
+					for (i = arr.length; i >= 1; i--) {
+						if (arr[i - 1][0] < arr[i - 1][1]) {
+							navDom.eq(i - 1).addClass(newClass).siblings().removeClass(newClass);
+							break;
+						}
+					}
+				}
+				navFixed();
+				scrollNav();
+				$(window).scroll(function() {
+					navFixed();
+					scrollNav();
+				})
+			})
+		</script>
+	</body>
+
+</html>

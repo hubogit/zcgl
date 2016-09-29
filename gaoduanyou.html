@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>高端旅行</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+			<link rel="stylesheet" type="text/css" href="css/easyui.css"/>
+			<link rel="stylesheet" type="text/css" href="css/icon.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reserve.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<div id="tq_kefu_main" class="tq_div_main" style="border: 0px ridge rgb(234, 234, 234); visibility: visible; position: fixed; top: 177px; z-index: 9997; padding: 0px; background: transparent none repeat scroll 0% 0%; text-align: center; left: 1px;">
+			<div id="tq_kefu_normal_container">
+				<img border="0" onclick="TQKF.kefuimg.Distrabute()" style="BACKGROUND:transparent none repeat scroll 0% 0%;cursor:pointer" src="img/offline3.png">
+			</div>
+		</div>
+		<div class="head">
+			<div class="head_nav">
+				<div class="head_nav_l">
+					<a onclick="return add_favorite(this,'中成国际');" href="javascript:;" title="中成国际" rel="sidebar" class="head_icon_1"><b></b>收藏中成国际</a>
+					<a target="_blank" href="javascript:;" class="head_icon_2"><b></b>中成国际首页</a>
+					<a class="head_icon_4 show_tip">
+						<b></b>加微信好友
+					</a>
+					<div class="head_H_1 divTip displayNONE" style="display: none;">
+						<b></b>
+						<dl>
+							<dt></dt>
+							<dd class="dd_top"></dd>
+							<dd>中成国际</dd>
+							<dd>官方微信</dd>
+							<dd class="H_click"></dd>
+						</dl>
+					</div>
+				</div>
+				<div class="head_nav_r">
+					<div style="display:none" id="ylogin">
+						<a target="_blank" href="javascript:;" class="head_login" id="h_username"></a>
+						<span onclick="loginout()" style="cursor:pointer;color:#1BBC9B" class="head_regist">退出</span>
+					</div>
+					<div id="nlogin">
+						<a href="javascript:;" class="head_login">登录</a>
+						<a class="head_dr_line">|</a>
+						<a href="javascript:;" class="head_regist">注册</a>
+					</div>
+					<a class="img">
+					我的中成
+				</a>
+					<div class="head_H_2 displayNONE">
+						<b></b>
+						<ul>
+							<li><a href="javascript:;" target="_blank">度假订单</a></li>
+							<li><a href="javascript:;" target="_blank">活动订单</a></li>
+							<li><a href="javascript:;" target="_blank">租车订单</a></li>
+							<li><a href="javascript:;" target="_blank">门票订单</a></li>
+							<li><a href="javascript:;" target="_blank">机票订单</a></li>
+							<!--<li><a target="_blank"  href="javascript:;">酒店订单</a></li>-->
+							<li><a href="javascript:;" target="_blank">我的世嘉卡</a></li>
+							<li><a rel="nofollow" href="javascript:;" target="_blank">我的优惠劵</a></li>
+							<li><a rel="nofollow" href="javascript:;" target="_blank">个性定制</a></li>
+							<li><a rel="nofollow" target="_blank" id="myQuestion">我的提问</a></li>
+						</ul>
+					</div>
+					<a class="img">
+					帮助中心
+				</a>
+					<div class="head_H_3 displayNONE">
+						<b></b>
+						<ul>
+							<li><a href="javascript:;" target="_blank">关于中成</a></li>
+							<li><a rel="nofollow" href="javascript:;" target="_blank">订单查询</a></li>
+							<li><a href="javascript:;" target="_blank">问题答疑</a></li>
+							<li><a href="javascript:;" target="_blank">证照服务</a></li>
+							<li><a href="javascript:;" target="_blank">出游宝典</a></li>
+							<li><a href="javascript:;" target="_blank">礼品卡</a></li>
+							<li><a href="javascript:;" target="_blank">世嘉卡</a></li>
+							<li><a rel="nofollow" href="javascript:;" target="_blank">支付方式</a></li>
+							<li><a href="javascript:;" target="_blank">网站地图</a></li>
+							<li><a href="javascript:;" target="_blank">旅游论坛</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="head_logo">
+				<p class="head_logo_l"><a style="display:inline-block;width:180px;height:100%;filter:alpha(Opacity=0);-moz-opacity:0;opacity: 0;" title="中成国际" href="javascript:;">中成国际</a></p>
+				<div class="head_ss">
+					<div class="head_ss_top">
+						<a href="javascript:;">全部<i></i></a>
+						<input type="text" value="搜索目的地、主题或关键字">
+						<b>搜索</b>
+					</div>
+					<div style=" clear: both;"></div>
+					<div class="head_ss_remen">
+						<img src="img/srk.png" alt="" />
+						<a href="javascript:;">美国</a>
+						<a href="javascript:;">加拿大</a>
+						<a href="javascript:;">新西兰</a>
+						<a href="javascript:;">日本</a>
+					</div>
+				</div>
+				<div class="head_logo_r">
+					<p class="H_hot"><b></b>中成国际服务热线</p>
+					<p class="H_hot_p">400-625-9960</p>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="nav_con">
+				<div class="nav_hot">
+					<a class="img">热门度假地<b></b>
+				</a>
+				</div>
+				<ul>
+					<a href="index.html">
+						<li>首页</li>
+					</a>
+					<a href="cjcty.html">
+						<li>出境参团游</li>
+					</a>
+					<a href="cjzyx.html">
+						<li>出境自由行</li>
+					</a>
+					<a href="zjy.html">
+						<li>自驾游</li>
+					</a>
+
+					<a href="gaoduanyou.html">
+						<li class="nav_click">高端旅行</li>
+					</a>
+					<a href="sirendingzhi.html">
+						<li>私人定制</li>
+					</a>
+					<a href="hyjly.html">
+						<li>会议奖励游</li>
+					</a>
+					<a href="qianzheng.html">
+						<li>签证</li>
+					</a>
+					<!--<a href="javascript:;"><li &lt;!&ndash; if($act == 'hotel') &ndash;&gt;class="nav_click"&lt;!&ndash; end &ndash;&gt;>酒店</li></a>-->
+				</ul>
+			</div>
+			<i></i>
+		</div>
+		<div class="sy_cktw displayNONE" id="questionDialog">
+			<h2>我的提问<a class="close"></a></h2>
+			<div class="tw_list_cont">
+				<p>我的提问状态：<span class="no_jd">待解答（<b id="no"></b>）</span><span class="yi_jd">已解答（<b id="yes"></b>）</span></p>
+				<div class="tw_list_row" id="tw_list_row">
+
+				</div>
+			</div>
+			<!--提问列表结束-->
+
+		</div>
+		<div class="sy_cktw displayNONE" id="quesDialog">
+			<h2>我的提问<a class="close"></a></h2>
+			<div class="tw_cont_center">
+			</div>
+			<p class="twck_btn"><a>返回</a></p>
+		</div>
+		<div class="bjzf_pic dialog" id="dialogDiv2">
+			<a target="_blabk" href="javascript:;"><img src="img/sse_bjzf.jpg"></a>
+			<a class="close"></a>
+		</div>
+		<div class="center clear">
+			<div class="sy_center">
+				<p class="het_40"></p>
+				<h1 class="sy_center_title"><b><a target="_blank" href="javascript:;">自驾游推荐</a></b></h1>
+				<div class="sy_tejia">
+					<div class="sy_img sy_list4" style="margin-left:0">
+						<dl>
+							<dt><a target="_blank" href="javascript:;"><img alt="法瑞意13日游" data-original="img/pic1.jpg" class="lazy" src="img/loading_tu.jpg"></a></dt>
+							<dd>
+								<h3><a target="_blank" href="javascript:;">法瑞意13日游</a></h3>
+								<p>沐浴地中海的阳光，体验欧风缤纷色彩</p>
+								<a target="_blank" href="javascript:;" class="round_go"></a>
+							</dd>
+						</dl>
+						<span class="biaojia"><b class="left_icon">￥</b>15499<b>起</b></span>
+					</div>
+					<div class="sy_img sy_list4">
+						<dl>
+							<dt><a target="_blank" href="javascript:;"><img alt="德法瑞意14日游" data-original="img/pic2.jpg" class="lazy" src="img/loading_tu.jpg"></a></dt>
+							<dd>
+								<h3><a target="_blank" href="javascript:;">德法瑞意14日游</a></h3>
+								<p>尽情享受多彩的风景</p>
+								<a target="_blank" href="javascript:;" class="round_go"></a>
+							</dd>
+						</dl>
+						<span class="biaojia"><b class="left_icon">￥</b>16899<b>起</b></span>
+					</div>
+					<div class="sy_img sy_list4">
+						<dl>
+							<dt><a target="_blank" href="javascript:;"><img alt="英德法瑞意16日游" data-original="img/pic3.jpg" class="lazy" src="img/loading_tu.jpg"></a></dt>
+							<dd>
+								<h3><a target="_blank" href="javascript:;">英德法瑞意16日游</a></h3>
+								<p>一价全含，欧洲之星，剑桥温莎，登铁力士</p>
+								<a target="_blank" href="javascript:;" class="round_go"></a>
+							</dd>
+						</dl>
+						<span class="biaojia"><b class="left_icon">￥</b>17999<b>起</b></span>
+					</div>
+					<div class="sy_img sy_list4">
+						<dl>
+							<dt><a target="_blank" href="javascript:;"><img alt="德法瑞意14日游" data-original="img/pic4.jpg" class="lazy" src="img/loading_tu.jpg"></a></dt>
+							<dd>
+								<h3><a target="_blank" href="javascript:;">德法瑞意14日游</a></h3>
+								<p>尽情享受多彩的风景</p>
+								<a target="_blank" href="javascript:;" class="round_go"></a>
+							</dd>
+						</dl>
+						<span class="biaojia"><b class="left_icon">￥</b>16899<b>起</b></span>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="same_con">
+					<div class="same_left">
+						<div class="filter">
+						<h3 class="filter_title">出境参团游</h3>
+						<ul>
+							<li>
+								<span>出发城市：</span>
+								<a href="javascript:;" class="filter_active">全部</a>
+								<a href="javascript:;">北京</a>
+								<a href="javascript:;">上海</a>
+								<div class="clear"></div>
+							</li>
+							<li>
+								<span>目&nbsp;&nbsp;的&nbsp;&nbsp;地：</span>
+								<a href="javascript:;" class="filter_active">全部</a>
+								<a href="javascript:;">美洲</a>
+								<a href="javascript:;">欧洲</a>
+								<a href="javascript:;">大洋洲</a>
+								<a href="javascript:;">亚洲</a>
+								<a href="javascript:;">中东</a>
+								<a href="javascript:;">非洲</a>
+								<div class="clear"></div>
+							</li>
+							<li>
+								<span>出发日期：</span>
+								<a href="javascript:;" class="filter_active">全部</a>
+								<input type="" name="" id="" value=""  class="easyui-datebox" />
+								<p>-</p>
+								<input type="" name="" id="" value=""  class="easyui-datebox" />
+								<a href="javascript:;" class="qd_remove">确定</a>
+								<a href="javascript:;" class="qd_remove">清除时间</a>
+								<div class="clear"></div>
+							</li>
+							<li>
+								<span>行程天数：</span>
+								<a href="javascript:;" class="filter_active">全部</a>
+								<a href="javascript:;">1---7天</a>
+								<a href="javascript:;">8—15天</a>
+								<a href="javascript:;">15天以上</a>
+								<div class="clear"></div>
+							</li>
+							<li>
+								<span>度假花费：</span>
+								<a href="javascript:;" class="filter_active">全部</a>
+								<a href="javascript:;">1万以下</a>
+								<a href="javascript:;">1万—2万</a>
+								<a href="javascript:;">2万以上</a>
+								<div class="clear"></div>
+							</li>
+							<li>
+								<span>优惠活动：</span>
+								<a href="javascript:;" class="filter_active">全部</a>
+								<a href="javascript:;">春节免费接送机服务</a>
+								<a href="javascript:;">立减100/人</a>
+								<a href="javascript:;">满万送千</a>
+								<div class="clear"></div>
+							</li>
+						</ul>
+					</div>
+					<div class="filter_h">
+						<ul>
+							<li class="a_click">
+								<a href="javascript:;" class="jt">销量</a>
+							</li>
+							<li>
+								<a href="javascript:;">新上架</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="jt">出发日期</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="jt">价格</a>
+							</li>
+						</ul>
+						<div class="filter_fw">
+							<a href="javascript:;">指定范围</a>
+							<input type="text" />
+							<p>-</p>
+							<input type="text" />
+							<a href="javascript:;" class="qd_remove">确定</a>
+							<a href="javascript:;" class="qd_remove">清除</a>
+						</div>
+					</div>
+					<div class="same_list">
+						<div class="list_left">
+							<a href="canada_9.html" target="_blank">
+								<img src="img/canada_9.jpg" />
+								<i></i>
+							</a>
+						</div>
+						<div class="list_right">
+							<h3><a href="canada_9.html" target="_blank">加拿大西部国家公园深度探索16日自然之旅</a></h3>
+							<div class="list_right_con">
+								<div class="con_left">
+									<p>途经行程：温哥华,贾斯珀镇,哥伦比亚,露易丝湖,卡尔加里</p>
+									<p>出发日期：7-18、8-6</p>
+									<p>出发城市：北京</p>
+								</div>
+								<div class="con_right">
+									<p>网上支付：<span>&yen;59800</span>起</p>
+									<p>线下支付：<b>&yen;59800</b></p>
+									<a href="javascript:;">立即支付</a>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+						<div class="same_list">
+						<div class="list_left">
+							<a href="canada_10.html" target="_blank">
+								<img src="img/canada_10.jpg" />
+								<i></i>
+							</a>
+						</div>
+						<div class="list_right">
+							<h3><a href="canada_10.html" target="_blank">加拿大大西洋四省17日深度探索之旅</a></h3>
+							<div class="list_right_con">
+								<div class="con_left">
+									<p>途经行程：多伦多,哈利法克斯,好望角,夏洛特城,巴德克,鹿湖市,甘德市,圣约翰斯 </p>
+									<p>出发日期：7-18、8-6</p>
+									<p>出发城市：北京</p>
+								</div>
+								<div class="con_right">
+									<p>网上支付：<span>&yen;59800</span>起</p>
+									<p>线下支付：<b>&yen;59800</b></p>
+									<a href="javascript:;">立即支付</a>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+						<div class="same_list">
+						<div class="list_left">
+							<a href="canada_11.html" target="_blank">
+								<img src="img/canada_11.jpg" />
+								<i></i>
+							</a>
+						</div>
+						<div class="list_right">
+							<h3><a href="canada_11.html" target="_blank">探访唯一温带远古原生态—加拿大原始森林观熊+原住民文化15日探秘之旅</a></h3>
+							<div class="list_right_con">
+								<div class="con_left">
+									<p>途经行程：温哥华,贝拉贝拉,哈迪港,贝拉库拉,Tweedsmuir Park Lodge,托菲诺,维多利亚,圣约翰斯 </p>
+									<p>出发日期：9-25</p>
+									<p>出发城市：北京</p>
+								</div>
+								<div class="con_right">
+									<p>网上支付：<span>&yen;79800</span>起</p>
+									<p>线下支付：<b>&yen;79800</b></p>
+									<a href="javascript:;">立即支付</a>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="same_list">
+						<div class="list_left">
+							<a href="canada_15.html" target="_blank">
+								<img src="img/canada_15.jpg"/>
+								<i></i>
+							</a>
+						</div>
+						<div class="list_right">
+							<h3><a href="canada_15.html" target="_blank">回归大自然—加拿大丘吉尔观白鲸12日探秘之旅</a></h3>
+							<div class="list_right_con">
+								<div class="con_left">
+									<p>途经行程：温哥华,温尼伯,丘吉尔镇,格兰维尔岛</p>
+									<p>出发日期：2016-8-4</p>
+									<p>出发城市：北京</p>
+								</div>
+								<div class="con_right">
+									<p>网上支付：<span>&yen;82500</span>起</p>
+									<p>线下支付：<b>&yen;82500</b></p>
+									<a href="javascript:;">立即支付</a>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="same_list">
+						<div class="list_left">
+							<a href="canada_26.html" target="_blank">
+								<img src="canada/canada26/hb_4.jpg"/>
+								<i></i>
+							</a>
+						</div>
+						<div class="list_right">
+							<h3><a href="canada_26.html" target="_blank"> 震撼心灵的梦想之地—美国西海岸8大国家公园25日自然之旅</a></h3>
+							<div class="list_right_con">
+								<div class="con_left">
+									<p>途经行程：旧金山,盐湖城,杰克逊,黄石国家公园,科迪,魔鬼塔,拉皮德城,总统山,疯马酋长巨石像,卡斯特州立公园,丹佛,格伦伍德斯普林斯,摩押,拱门国家公园,峡谷地国家公园,纪念碑谷,鹅脖子湾,羚羊峡谷(上羚羊),下羚羊,鲍威尔湖,鲍威尔湖游船,马蹄湾,卡纳布,粉红珊瑚沙丘州立公园,White Pocket,大峡谷国家公园(北緣),布莱斯国家公园,锡安国家公园,拉斯维加斯,死亡谷国家公园</p>
+									<p>出发日期：2017-11-14</p>
+									<p>出发城市：北京</p>
+								</div>
+								<div class="con_right">
+									<p>网上支付：<span>&yen;128000</span>起</p>
+									<p>线下支付：<b>&yen;128000</b></p>
+									<a href="javascript:;">立即支付</a>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					</div>
+					<div class="same_right">
+						<div class="flash_sale">
+							<h3>限时抢购</h3>
+							<ul>
+								<li>
+									<a href="javascript:;">
+										<img src="img/sale_pic1.jpg"/>
+										<div class="sale_right">
+											<p>美国关岛5晚6天百变自由行【香港停留/三星酒店/美联航国际航班】<span>北京出发</span></p>
+											<b>&yen;6999元</b>
+											<i>抢购价：&yen;5999元</i>
+										</div>
+										<div class="clear"></div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="img/sale_pic1.jpg"/>
+										<div class="sale_right">
+											<p>美国关岛5晚6天百变自由行【香港停留/三星酒店/美联航国际航班】<span>北京出发</span></p>
+											<b>&yen;6999元</b>
+											<i>抢购价：&yen;5999元</i>
+										</div>
+										<div class="clear"></div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="img/sale_pic1.jpg"/>
+										<div class="sale_right">
+											<p>美国关岛5晚6天百变自由行【香港停留/三星酒店/美联航国际航班】<span>北京出发</span></p>
+											<b>&yen;6999元</b>
+											<i>抢购价：&yen;5999元</i>
+										</div>
+										<div class="clear"></div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<img src="img/sale_pic1.jpg"/>
+										<div class="sale_right">
+											<p>美国关岛5晚6天百变自由行【香港停留/三星酒店/美联航国际航班】<span>北京出发</span></p>
+											<b>&yen;6999元</b>
+											<i>抢购价：&yen;5999元</i>
+										</div>
+										<div class="clear"></div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<a href="javascript:;" class="order">
+							<img src="img/order.jpg"/>
+						</a>
+					</div>
+				</div>
+				<!--回到顶部-->
+				<div class="back backM" id="goTop">
+					<a>
+						<span></span>
+						<p>回到顶部</p>
+					</a>
+				</div>
+				<!--回到顶部 end-->
+			</div>
+		</div>
+		<div class="foot_t_border">
+			<div class="dibu">
+				<a target="_blank" href="javascript:;">关于中成</a>|
+				<a target="_blank" href="javascript:;">合作品牌</a>|
+				<a target="_blank" href="javascript:;">加入中成</a>|
+				<a target="_blank" href="javascript:;">友情链接</a>|
+				<a rel="nofollow" target="_blank" href="javascript:;">法律声明</a>|
+				<a target="_blank" href="javascript:;">网站地图</a>|
+				<a target="_blank" href="javascript:;">证照服务</a>|
+				<a target="_blank" href="javascript:;">联系我们</a>|
+				<a target="_blank" href="javascript:;">热点问题</a>
+				<br>
+				<p>建议与投诉邮箱:support@caissa.com.cn Copyright&copy;2005-2013 caissa.com.cn</p>
+				<p>Copyright&copy;2005-2013 caissa.com.cn. AllRights Reserved.旅行社业务经营许可证编号：L-BJ-CJ00051 国家旅游局投诉电话：010-65275315</p>
+				<p>京ICP证031062号 北京中成国际旅行社有限责任公司版权所有 北京市公安局网络备案编号：京公网安备110105011423号</p>
+			</div>
+		</div>
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.lazyload.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/util.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.easyui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(".nav_con div.nav_hot_hide ol li").last().css({
+				border: "none"
+			});
+			$(".nav_con div.nav_hot_hide ol li").mouseover(function() {
+				$(this).children(".rm_hover_bg").show();
+			}).mouseout(function() {
+				$(this).children(".rm_hover_bg").hide();
+			})
+			$(".nav_con div.nav_hot_hide ol li").first().children(".rm_hover_bg").css({
+				borderTop: "none",
+				top: "0"
+			});
+			$(".nav_con div.nav_hot_hide ol li").last().children(".rm_hover_bg").css({
+				borderBottom: "none",
+				top: "-2px"
+			});
+		</script>
+		<script type="text/javascript" charset="utf-8">
+			$(function() {
+				$("img.lazy").lazyload({
+					placeholder: "/img/loading_tu.jpg",
+					effect: "fadeIn"
+				});
+			});
+		</script>
+	</body>
+
+</html>
